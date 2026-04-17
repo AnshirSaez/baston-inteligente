@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Localizador IoT </title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles/styles.css">
+
+  
+</head>
+<body>
+
+<header class="header">
+  <div class="nav-inner">
+    <div class="nav-links">
+      <a href="index.html" class="active">Mapa</a>
+      <a href="info.html" >Información</a>
+      <a href="option.html">SOS</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <div id="map"></div>
+
+  <div class="info-bar">
+    <div class="info-item">
+      <span>Latitud</span>
+      <span id="lat">--</span>
+    </div>
+
+    <div class="info-item">
+      <span>Longitud</span>
+      <span id="lng">--</span>
+    </div>
+
+    <div class="info-item">
+      <span>Dirección</span>
+      <span id="address">--</span>
+    </div>
+
+    <div class="search-btn" onclick="centrar()">
+      Buscar
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
+
